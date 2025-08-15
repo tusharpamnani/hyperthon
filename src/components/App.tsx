@@ -2,10 +2,7 @@
 
 import { useEffect } from "react";
 import { useMiniApp } from "@neynar/react";
-import { Header } from "~/components/ui/Header";
-import { Footer } from "~/components/ui/Footer";
-import { HomeTab, ActionsTab, ContextTab, WalletTab } from "~/components/ui/tabs";
-import { USE_WALLET } from "~/lib/constants";
+import { FarcasterBasedQuiz, ActionsTab, ContextTab, WalletTab } from "~/components/ui/tabs";
 import { useNeynarUser } from "../hooks/useNeynarUser";
 
 // --- Types ---
@@ -101,7 +98,6 @@ export default function App(
       }}
     >
       {/* Header should be full width */}
-      <Header neynarUser={neynarUser} />
 
       {/* Main content and footer should be centered */}
       <div className="container py-2 pb-20">
@@ -109,13 +105,12 @@ export default function App(
         <h1 className="text-2xl font-bold text-center mb-4">{title}</h1>
 
         {/* Tab content rendering */}
-        {currentTab === Tab.Home && <HomeTab />}
+        {currentTab === Tab.Home && <FarcasterBasedQuiz />}
         {currentTab === Tab.Actions && <ActionsTab />}
         {currentTab === Tab.Context && <ContextTab />}
         {currentTab === Tab.Wallet && <WalletTab />}
 
         {/* Footer with navigation */}
-        <Footer activeTab={currentTab as Tab} setActiveTab={setActiveTab} showWallet={USE_WALLET} />
       </div>
     </div>
   );
