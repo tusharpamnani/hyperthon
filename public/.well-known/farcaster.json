@@ -1,0 +1,15 @@
+{
+  "frame": {
+    "name": "Based Blitz",
+    "version": "1",
+    "iconUrl": "https://hyperthon-flame.vercel.app/icon.png",
+    "homeUrl": "https://hyperthon-flame.vercel.app",
+    "imageUrl": "https://hyperthon-flame.vercel.app/image.png",
+    "splashImageUrl": "https://hyperthon-flame.vercel.app/splash.png",
+    "splashBackgroundColor": "#6200EA",
+    "webhookUrl": "https://hyperthon-flame.vercel.app/api/webhook",
+    "subtitle": "check your Based Score",
+    "description": "Prove you're not cringe. Earn $BLITZ. Climb the Basedboard.",
+    "primaryCategory": "social"
+  }
+}
